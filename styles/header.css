@@ -1,0 +1,124 @@
+﻿.Header {
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(240, 240, 228);
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(80, 81, 88, 0.9);
+}
+
+.Name {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 35px;
+}
+
+.left-section button {
+    margin-left: 0;
+    width: 72px;
+    height: 74px;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+    .left-section button:hover {
+        background-color: rgb(235, 235, 235);
+    }
+
+.left-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.middle-section {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    max-width: 470px;
+    flex: 1;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 182px;
+    flex-shrink: 0;
+    margin-left: 29px;
+    margin-right: 50px;
+}
+
+.hamburger-logo {
+    height: 24px;
+}
+
+.Social-media {
+    height: 24px;
+}
+
+
+
+
+.Side-bar button {
+    margin-left: 0;
+    width: 72px;
+    height: 74px;
+    font-size: 10px;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+    .Side-bar button:hover {
+        background-color: rgb(235, 235, 235);
+    }
+
+.logo {
+    height: 28px;
+    margin-bottom: 1px;
+}
+
+
+.tooltip {
+    font-size: 12px;
+    position: absolute;
+    bottom: -50px;
+    color: white;
+    background-color: rgba(90, 90, 90, 0.8);
+    padding: 10px 8px;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tooltip-conteiner:hover .tooltip,
+.mic-button:hover .tooltip,
+.search-button:hover .tooltip {
+    opacity: 1;
+}
+
+.tooltip-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

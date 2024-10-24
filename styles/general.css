@@ -1,0 +1,97 @@
+﻿p {
+    font-family: Roboto;
+    margin: 0 0 0 0;
+}
+
+body {
+    margin-top: 57px;
+    margin-left: 0px;
+    font-family: Roboto, Arial;
+    background-color: rgb(61, 62, 70);
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+}
+
+
+
+.main {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+}
+
+.Side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 72px;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    margin-top: 10px;
+}
+
+.button-container {
+    width: 72px;
+}
+
+    .button-container button {
+        position: fixed;
+    }
+
+.dots-container {
+    bottom: 170px;
+    align-self: center;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    height: 30px;
+    align-items: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    padding-top: 15px;
+    margin-top: 15px;
+    background-color: #BBBBBB;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+.background-side-bar {
+    background-color: rgba(54, 54, 59, 0.9);
+    bottom: 0;
+    top: 0;
+    width: 72px;
+    z-index: -1;
+    position: fixed;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+}

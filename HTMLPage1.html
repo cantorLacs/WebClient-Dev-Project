@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<head>
+    <title>Luis Cantor - Developer</title>
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/Home.css">
+    <link rel="stylesheet" href="styles/CV.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/About.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="background-cover"></div>
+    <div class="mySlides fade background">
+        <img src="pictures\background1.avif" style="width:100%">
+    </div>
+    <div class="mySlides fade background">
+        <img src="pictures\background2.avif" style="width:100%">
+    </div>
+    <div class="mySlides fade background">
+        <img src="pictures\background3.avif" style="width:100%">
+    </div>
+
+
+
+    <div class="Header">
+        <div class="left-section">
+            <button id="hamburger-button">
+                <img class="hamburger-logo" src="pictures\hamburger-menu.png">
+            </button>
+
+            <p class="Name">Luis Antonio Cantor</p>
+        </div>
+        <div class="middle-section">
+            <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;">Full-stack developer</p>
+
+        </div>
+        <div class="right-section">
+            <div class="tooltip-conteiner">
+                <a href="https://github.com/">
+                    <img class="Social-media" src="pictures\github-light.svg">
+                    <div class="tooltip">Github</div>
+                </a>
+            </div>
+            <div class="tooltip-conteiner">
+                <a href="https://linkedin.com">
+                    <img class="Social-media" src="pictures\linkedin.svg">
+                    <div class="tooltip">Linkedin</div>
+                </a>
+            </div>
+            <div class="tooltip-conteiner">
+                <a href="https://www.instagram.com/">
+                    <img class="Social-media" src="pictures\instagram.svg">
+                    <div class="tooltip">Instagram</div>
+                </a>
+            </div>
+            <div class="tooltip-conteiner">
+                <a href="https://www.facebook.com/">
+                    <img class="Social-media" src="pictures\facebook.svg">
+                    <div class="tooltip">Facebook</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main" id="main">
+        <div class="Side-bar" id="Side-bar">
+            <div class="background-side-bar"></div>
+            <div class="buttons-container">
+                <div class="button-container">
+                    <button id="button-Home">
+                        <img class="logo" src="pictures/Home.png" alt="home">
+                        <p>Home</p>
+                    </button>
+                </div>
+                <div class="button-container">
+                    <button id="button-CV">
+                        <img class="logo" src="pictures\CV.png  " alt="CV">
+                        <p>CV</p>
+                    </button>
+                </div>
+                <div class="button-container">
+                    <button id="button-About">
+                        <img class="logo" src="pictures\About.png  " alt="About">
+                        <p>About me</p>
+                    </button>
+                </div>
+                <div class="button-container">
+                    <button id="button-Contact">
+                        <img class="logo" src="pictures\Contact.png" alt="Contact">
+                        <p>Contact</p>
+                    </button>
+                </div>
+            </div>
+            <div class="dots-container">
+                <div class="tooltip-conteiner">
+                    <button onclick="stopSlideshow()">
+                        <img class="logo" src="pictures\Play_Pause.svg" alt="Play_Pause">
+                        <div id="tooltip-play-pause">Pause</div>
+                    </button>
+                </div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div class="Home-container" id="Home-container">
+            <div class="Home">
+                <p class="Home-text" style="font-size: 25px;">Welcome to My Webside</p>
+                <p class="Home-text">
+
+
+                    Hello! I'm a full-stack developer specializing in back-end technologies,
+                    with a passion for creating scalable and efficient software solutions.
+                    My expertise lies in building robust back-end systems, crafting seamless
+                    user experiences, and optimizing code for high performance.
+                </p>
+
+                <div class="home-buttons-block">
+                    <button id="button-CV-home">
+                        <img class="logo" src="pictures\CV.png" alt="CV">
+                        <p>CV</p>
+                    </button>
+                    <button id="button-About-home">
+                        <img class="logo" src="pictures\About.png" alt="About">
+                        <p>About</p>
+                    </button>
+                    <button id="button-Contact-home">
+                        <img class="logo" src="pictures\Contact.png" alt="Contact">
+                        <p>Contact</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="CV-container" id="CV-container">
+            <div class="CV">
+                <p class="CV-text" style="font-size: 25px;">LUIS ANTONIO CANTOR SOTOMAYOR</p>
+                <p class="CV-text">-----------------------------------</p>
+                <p class="CV-text">
+                    Results-driven entrepreneur with hands-on experience in all aspects of business,
+                    from operations to finances, and from HR to marketing.
+                    Skilled in backend development, including databases, APIs,
+                    and server-side logic, with a foundational understanding of
+                    full-stack development. Bilingual in English and Spanish.
+                </p>
+                <p class="CV-text">-----------------------------------</p>
+                <h2>Work Experience</h2>
+                <p>
+                    <span class="company">INSUPAN S.A.S.</span>,
+                    <span class="location">Bogotá D.C. (Colombia)</span>
+                    <span class="role">2015 – 2017</span><br>
+                    <span class="highlight">Invoices Assistant</span><br>
+                    • Registered invoices
+                </p>
+
+                <p>
+                    <span class="company">Hyatt Hotels Corporation</span>,
+                    <span class="location">Incline Village, Nevada (USA)</span>
+                    <span class="role">May – August 2017</span><br>
+                    <span class="highlight">Steward (Seasonal Job)</span><br>
+                    • Transported food and supplies within the hotel to ensure all departments had the necessary resources for daily operations.
+                </p>
+
+                <p>
+                    <span class="company">Hacienda De La Sierra</span>,
+                    <span class="location">Incline Village, Nevada (USA)</span>
+                    <span class="role">Jun – August 2017</span><br>
+                    <span class="highlight">Busser (Seasonal Job)</span><br>
+                </p>
+
+                <p>
+                    <span class="company">Credicorp Capital Colombia</span>,
+                    <span class="location">Bogotá D.C. (Colombia)</span>
+                    <span class="role">January – July 2019</span><br>
+                    <span class="highlight">Equity Research Intern</span><br>
+                    • Supported equity analysts with database management and report creation.<br>
+                    • Translated reports.
+                </p>
+
+                <p>
+                    <span class="company">Access ID S.A.S.</span>,
+                    <span class="location">Bogotá D.C. (Colombia)</span>
+                    <span class="role">2020 – Present</span><br>
+                    <span class="highlight">Owner/General Manager</span><br>
+                    • Founded the firm from scratch and participated in all facets of the company.<br>
+                    • Managed projects, developed detailed project plans that include scope, cost, schedule, and quality.
+                </p>
+
+                <p>
+                    <span class="company">INSUPAN S.A.S.</span>,
+                    <span class="location">Bogotá D.C. (Colombia)</span>
+                    <span class="role">2021 - 2022</span><br>
+                    <span class="highlight">Commercial Manager</span><br>
+                    • Price management<br>
+                    • Customer credit control<br>
+                    • Supported sellers during the sales process<br>
+                    • Implemented a new sales system that enabled the company to manage pricing and customer credit, resulting in a significant reduction in errors and staff required in the invoicing department.
+                </p>
+
+                <p>
+                    <span class="company">Teleperformance Colombia S.A.S.</span>,
+                    <span class="location">Oct – Jan 2021</span><br>
+                    <span class="highlight">Bilingual Agent</span><br>
+                    • Customer Service Agent for an Uber Eats campaign in the USA.
+                </p>
+
+                <p class="CV-text">-----------------------------------</p>
+
+                <h2>Education</h2>
+                <p>
+                    <span class="highlight">Bachelor’s Degree in International Business Administration</span><br>
+                    <span class="institution">Universidad del Rosario</span>,
+                    <span class="location">Bogotá D.C., Colombia</span><br>
+                    <span class="highlight">2014 - 2020</span>
+                </p>
+
+                <p>
+                    <span class="highlight">AEC in Information Technology Programmer-Analyst</span><br>
+                    <span class="institution">LaSalle College Montréal</span>,
+                    <span class="location">Montréal, Qc, Canada</span><br>
+                    <span class="highlight">2023 - Present</span>
+                </p>
+                <p class="CV-text">-----------------------------------</p>
+                <h2>Courses and Certifications</h2>
+                <p>
+                    <span class="highlight">Business Administration and Economics</span><br>
+                    (Bachelor's Exchange Program)<br>
+                    <span class="institution">Universität Passau</span>,
+                    <span class="location">Passau, Germany</span><br>
+                    <span class="highlight">2018</span>
+                </p>
+
+                <p>
+                    <span class="highlight">Coaching Training for Personal Brand Development</span><br>
+                    <span class="institution">Fundación universitaria Konrad Lorenz</span>,
+                    <span class="location">Bogotá D.C., Colombia</span><br>
+                    <span class="highlight">2014</span>
+                </p>
+                <p class="CV-text">-----------------------------------</p>
+                <h2>Languages</h2>
+                <p>
+                    <span class="highlight">English</span>, C1<br>
+                    <span class="highlight">Spanish</span>, Native
+                </p>
+
+
+            </div>
+        </div>
+        <div class="About-container" id="About-container">
+            <div class="About">
+                <h1>About Me</h1>
+
+                <p>Hi, my name is <span class="highlight">Luis</span>, and I was born in <span class="highlight">Bogotá, Colombia</span>.</p>
+                <p>
+                    Colombia is known for its diverse culture, beautiful landscapes, and vibrant cities.
+                    Bogotá, the capital, is a bustling metropolis that offers a mix of modernity
+                    and tradition. You can find a rich history in the streets of La Candelaria,
+                    the historic district, alongside modern architecture and art scenes.
+                </p>
+
+                <img class="map" src="pictures\map.png">
+
+
+                <p>
+                    Colombia is famous for its coffee. The country is one of the largest coffee
+                    producers in the world, and its coffee-growing region, often called the
+                    "Coffee Triangle," is a UNESCO World Heritage Site. Additionally,
+                    Colombia has a rich biodiversity, with tropical rainforests, beautiful
+                    beaches in places like Cartagena, and the unique landscapes of the
+                    Tatacoa Desert and Caño Cristales, often referred to as the
+                    "river of five colors."
+                </p>
+
+                <img class="pictures" src="pictures/colombian-coffee.webp">
+
+                <div class="hobbies">
+                    <p>
+                        One of my favorite activities is <span class="highlight">climbing.</span> Whether it's bouldering
+                        in an indoor gym or climbing real rocks outdoors, climbing is a
+                        fantastic way to stay fit and test your physical and mental strength.
+                        When you climb, you need to think creatively to find the best
+                        route to the top, making it a perfect blend of problem-solving
+                        and physical exertion.
+                    </p>
+
+                    <img class="pictures" src="pictures/climbing.webp">
+
+
+
+
+                    <p>
+                        Climbing outdoors is especially fun because it allows you to connect
+                        with nature. The sense of accomplishment when you reach the top of
+                        a route is exhilarating, and the views are often breathtaking.
+                        Climbing is also a great community activity. You meet people
+                        who share the same passion, and there's a sense of camaraderie
+                        among climbers as they help each other with tips and encouragement.
+                    </p>
+                </div>
+                <img class="pictures" src="pictures/climbing2.webp">
+
+
+
+            </div>
+        </div>
+        <div class="contact-container" id="contact-container">
+            <div class="contact-form">
+                <h2>Contact me</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="JavaScript.js"></script>
+</body>

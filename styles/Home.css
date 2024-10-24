@@ -1,0 +1,98 @@
+﻿.Home-container {
+    display: block;
+    margin: 50px;
+}
+
+.Home {
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgba(80, 81, 88, 0.9);
+}
+
+.Home-text {
+    color: aliceblue;
+    padding: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.home-buttons-block {
+    font-family: Roboto, Arial;
+    display: flex;
+    column-gap: 16px;
+    row-gap: 40px;
+    padding: 75px;
+    background-color: rgba(80, 81, 88, 0);
+    align-items: center;
+    justify-content: space-around;
+}
+
+    .home-buttons-block button {
+        background-color: rgba(107, 112, 153, 0.5);
+        height: 120px;
+        width: 120px;
+        justify-self: center;
+    }
+
+        .home-buttons-block button:hover {
+            background-color: rgba(229, 231, 238, 0.893);
+        }
+
+@media (max-width: 850px) {
+    .Home {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Home-text {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .home-buttons-block {
+        padding-top: 20px;
+    }
+
+        .home-buttons-block button {
+            height: 55px;
+            width: 55px;
+        }
+
+        .home-buttons-block img {
+            height: 20px;
+        }
+
+        .home-buttons-block p {
+            font-size: 10px;
+        }
+
+    .Home-container {
+        margin: 30px;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 999px) {
+    .Home {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .home-buttons-block button {
+        height: 80px;
+        width: 80px;
+    }
+
+    .Home-container {
+        margin: 40px;
+    }
+}
+
+.home-buttons-block button:active {
+    background-color: rgba(221, 32, 32, 0.758);
+}
