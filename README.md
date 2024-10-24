@@ -2,6 +2,9 @@
 
 This project is a simple web page created for a class assignment. It utilizes HTML, CSS, and JavaScript for the frontend, built without any frameworks. The webpage features automatic image transitions and a responsive menu.
 
+View page
+https://cantorlacs.github.io/WebClient-Dev-Project/
+
 ## Features
 
 - **HTML**: The structure of the web page is built using semantic HTML elements.
